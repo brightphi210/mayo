@@ -1,0 +1,231 @@
+@import './variables.scss';
+
+*{@include default}
+
+
+.sectionTwo{
+    text-align: left;
+    padding: 50px 10%;
+}
+
+.sectionTwo h2{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.sectionTwoFlex{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.weDiv{
+    border-radius: 20px;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+
+.weDiv h2{
+    font-size: 30px;
+}
+
+
+.webOne {
+    background-color: #04242a;
+    color: white;
+    text-align: center;
+}
+
+.webThree{
+    background-color: #eb9808 !important;
+    color: white;
+    text-align: center;
+}
+
+.webTwo {
+    background-color: #006ac7 !important;
+    color: white;
+    text-align: center;
+}
+
+.webFour {
+    background-color: #02580b !important;
+    color: white;
+    text-align: center;
+}
+
+
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.right div{
+    background-color: #6b7d80;
+    padding: 30px;
+    text-align: center !important;
+}
+
+.weDiv img{
+    width: 100%;
+}
+
+
+
+.weDiv button{
+    padding: 6px 20px;
+    border-radius: 10px;
+    border: $my-blue solid 1px;
+    color: $my-blue;
+    background-color: $my-white;
+}
+
+.weDiv p{
+    text-align: justify;
+    font-size: 15px;
+    padding: 30px 0;
+    line-height: 25px;
+    // font-weight: 300;
+}
+
+
+.weDiv h3{
+    font-size: 20px;
+}
+
+.weDiv span{
+    font-size: 15px;
+    padding-bottom: 10px;
+    display: block;
+}
+.right p{
+    padding: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+// ============================= section two one =============================
+.sectionTwoOne{
+    padding: 30px 8%;
+    background-color: $my-blue;
+}
+
+
+.sectionTwoOne{
+    text-align: center;
+    color: $my-white;
+}
+
+.weDivOne{
+    width: 100%;
+    text-align: left;
+    background-color: $my-white;
+    background-color: #04242a;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.weDivOne h2{
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.weDivOne p{
+    font-size: 15px;
+    padding: 5px 0;
+    font-weight: 300;
+}
+
+
+.weDivOne img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+@media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
+    
+    .sectionTwo{
+        text-align: left;
+    }
+
+    .sectionTwoFlex{
+        display: block;
+    }
+
+    .sectionTwo{
+        padding: 30px 5%;
+    }
+
+    .sectionTwo h2{
+        font-size: 15px;
+    }
+    
+
+
+    .sectionTwoOne{
+        text-align: center;
+        color: $my-white;
+    }
+
+
+    .right{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    // =============== .sectionTwoFlex =========================
+    .sectionTwoOne{
+        padding: 20px 5%;
+    }
+    .sectionTwoOne h2{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .weDiv{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .weDiv img{
+        display: none;
+    }
+
+    
+    .weDivOne{
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .weDivOne h1{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    
+    .weDivOne h2{
+        text-align: left !important; 
+        color: #6b7d80;
+    }
+
+    .weDivOne img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .weDivOne p{
+        font-size: 15px !important;
+        padding: 5px 0;
+        font-weight: 300;
+    }
+}

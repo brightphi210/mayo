@@ -14,7 +14,7 @@ const SectionOne = () => {
                 Simplify business processes <br /> with our ERP system
                 </h2>
                 <p>Integrate daily business tasks for a more <br /> efficient enterprise resource planning system.</p>
-                <Link to={'/contact'}><button>Book Session</button></Link>
+                <Link to={'/contact'}><button>Contact Us</button></Link>
         </div>
     </div>
   )
