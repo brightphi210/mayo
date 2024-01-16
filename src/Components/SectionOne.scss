@@ -35,6 +35,7 @@
     width: 60%;
     color: white;
     padding-top: 100px;
+    text-align: center;
 }
 .headerText h2{
     font-size: 60px;
@@ -59,6 +60,49 @@
     border-radius: 30px;
     cursor: pointer;
     font-size: 15px;
+}
+
+
+@media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
+
+    .headerSec{
+        height: 70vh;
+        width: 100vw;
+    }
+    .headerText{
+        isolation: isolate;
+        width: 100%;
+        color: white;
+        margin-top: 20px;
+        text-align: center;
+        padding: 0 5%;
+    }
+
+
+    .headerText h2{
+        font-size: 30px;
+        color: white;
+        // text-align: left;
+        line-height: 35px;
+    }
+    
+    .headerText p{
+        // text-align: left;
+        font-size: 15px;
+        padding: 30px 0;
+    }
+
+    .headerText button{
+        padding: 12px 30px;
+        background-color: rgb(90, 140, 205);
+        color: white;
+        display: block;
+        margin: auto;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 13px;
+    }
 }
 
 
