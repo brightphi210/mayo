@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;900&display=swap');
+
+@mixin default{
+    // font-family: 'Kanit', sans-serif;
+    font-family: "Lato", sans-serif;
+    // font-weight: bold;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin button-style{
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+
+@mixin hover-blue{
+    background-color:#ffb236;
+    transition: all 0.2s ease;
+}
+
+// =========== Color =============
+$my-white: white;
+$my-blue: #020d0f;
+$my-gray: rgb(253, 253, 253);
+$my-pink: #FDF0EA;
+$my-yellow: #ffb236;
+
+
+
+// ============= Screens =================
+$small-One : 320px;
+$small-Two : 480px;
+$medium-One : 481px ;
+$medium-Two : 768px;
+$large-One : 1025px;
+$large-Two : 1200px;
+
+
+// ================ Fonts Size ================
+$big-fonts : 60px;
+$medium-fonts : 30px;
+
+
+a{
+    text-decoration: none;
+    color: $my-blue;
+}
