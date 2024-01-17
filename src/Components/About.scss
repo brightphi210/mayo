@@ -1,0 +1,182 @@
+
+
+@import './variables.scss';
+
+*{@include default}
+
+
+// =========================== portfolio Section ===========================
+
+
+
+.portfolioSection{
+    padding: 100px 5%;
+
+}
+.portfolioCard{
+    background-color: $my-yellow;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    color: $my-white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+
+
+.portfolioCard{
+    padding: 60px 5%;
+    gap: 30px;
+    background-image: url(./homeBg1.jpeg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: changeBackground 10s linear infinite;
+    border-radius: 30px;
+}
+
+
+
+.portfolioCard::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 44, 51, 0.7);
+    border-radius: 30px;
+}
+
+.portfolioCard h2{
+    font-size: 35px;
+    isolation: isolate;
+}
+
+.portfolioCard button{
+    padding: 10px 30px;
+    background-color: rgb(3, 130, 181);
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    isolation: isolate;
+    color: white;
+    cursor: pointer;
+}
+
+.portfolioCard button:hover{
+    background-color: white ;
+    transition:all 0.5s ease-in-out;
+    color: $my-blue;
+}
+
+.portfolioCard p{
+    isolation: isolate;
+    padding: 10px 0;
+}
+
+
+// ====================== portfolio Gen Div ======================
+
+.portfolioGenDiv{
+    display: flex;
+    gap: 20px;
+    padding: 20px 15%;
+    justify-content: center;
+    
+}
+
+.eachportfolio{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.eachportfolio img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.eachportfolio h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.eachportfolio h2{
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 !important;
+    color: gray;
+}
+
+.eachportfolio p{
+    padding: 5px 0;
+}
+
+.eachportfolio button{
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;    
+    padding: 6px 20px;
+    border-radius: 20px;
+    border: $my-blue solid 1px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.eachportfolio button:hover{
+    margin-left: 10px;
+    transition: all 0.5s ease; 
+}
+
+
+@media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
+    
+    .portfolioSection{
+        padding-bottom: 30px;
+    }
+    
+    .portfolioCard h2{
+        font-size: 25px;
+    }
+
+
+    .portfolioCard{
+        padding: 35px;
+        border-radius: 10px;
+    }
+
+    .portfolioCard::before {
+        border-radius: 10px;
+    }
+
+    .portfolioCard p{
+        font-size: 15px;
+    }
+
+    .portfolioGenDiv{
+        display: grid;
+        grid-template-columns: 1fr;  
+        padding: 20px 0; 
+    }
+
+    .portfolioCard button{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .eachportfolio p{
+        padding: 5px 0;
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+
+
+    .eachportfolio button{
+        margin-top: 10px;
+    }
+}
