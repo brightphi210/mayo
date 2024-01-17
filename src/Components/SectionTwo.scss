@@ -112,7 +112,7 @@
 
 // ============================= section two one =============================
 .sectionTwoOne{
-    padding: 30px 8%;
+    padding: 30px 3%;
     background-color: $my-blue;
 }
 
@@ -152,6 +152,25 @@
 }
 
 
+.right3Div{
+    border-bottom: 1px grey solid;
+}
+
+
+.right3 h3{
+    padding-top: 30px;
+}
+
+
+.right3 p{
+    padding: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.weDiv img{
+    width: 100%;
+}
 @media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
     
     .sectionTwo{
@@ -185,7 +204,7 @@
 
     // =============== .sectionTwoFlex =========================
     .sectionTwoOne{
-        padding: 20px 5%;
+        padding: 20px 3%;
     }
     .sectionTwoOne h2{
         text-align: center;
@@ -202,6 +221,11 @@
         display: none;
     }
 
+
+    .weDiv img{
+        display: block;
+        width: 100%;
+    }
     
     .weDivOne{
         border-radius: 10px;
@@ -227,5 +251,14 @@
         font-size: 15px !important;
         padding: 5px 0;
         font-weight: 300;
+    }
+
+    .weDiv img{
+        width: 100%;
+    }
+
+
+    .right3Div p{
+        font-size: 13px;
     }
 }
